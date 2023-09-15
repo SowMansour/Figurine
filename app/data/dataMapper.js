@@ -11,7 +11,7 @@ const dataMapper = {
         const result = await client.query(`SELECT * FROM figurine WHERE id = $1`, [figId]);
         const figurine = result.rows[0];
         return figurine;
-    }
+    },
 
 }
 
